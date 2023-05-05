@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Navbar from "../../NavBar/navBar";
+//import Navbar from "../../NavBar/navBar";
 import { getStudents, getProfesors } from "../../../Redux/actions";
 import Select from "./Select.jsx";
 import style from "./EditarLanding.module.css";

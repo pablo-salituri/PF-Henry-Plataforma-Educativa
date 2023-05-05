@@ -3,19 +3,12 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import NavBarAdmin from "../../navbarAdMIN/NavBar";
-import {
-  getStudent,
-  editAlumno2,
-  cleanResponse,
-  getMateriasById,
-  getAulas,
-  editMateria,
-} from "../../../../Redux/actions";
+import { cleanResponse, getMateriasById, getAulas, editMateria } from "../../../../Redux/actions";
 
 import style from "./EditarMateria.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-import Swal from "sweetalert2";
+//import Swal from "sweetalert2";
 
 export default function EditarMateria() {
   const dispatch = useDispatch();

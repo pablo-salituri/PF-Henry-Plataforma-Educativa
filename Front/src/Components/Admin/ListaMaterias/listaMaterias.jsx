@@ -1,6 +1,6 @@
-import React, { useEffect /* , useState  */, useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteMateria, getMateriasAdmin } from "../../../Redux/actions";
+import { deleteMateria /* , getMateriasAdmin */ } from "../../../Redux/actions";
 import style from "./ListaMaterias.module.css";
 import NavBarAdmin from "../navbarAdMIN/NavBar";
 import { useNavigate } from "react-router-dom";

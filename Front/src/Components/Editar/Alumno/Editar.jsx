@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../../NavBar/navBar";
+//import Navbar from "../../NavBar/navBar";
 import { getStudent, editAlumno2, cleanResponse } from "../../../Redux/actions";
 import { validations } from "./validations";
 import style from "./EditarUsuarios.module.css";

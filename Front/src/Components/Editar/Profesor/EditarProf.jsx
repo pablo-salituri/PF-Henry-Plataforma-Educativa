@@ -3,12 +3,8 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../../NavBar/navBar";
-import {
-  getProfesor,
-  cleanResponse,
-  editProfesor2,
-} from "../../../Redux/actions";
+//import Navbar from "../../NavBar/navBar";
+import { getProfesor, cleanResponse, editProfesor2 } from "../../../Redux/actions";
 import { validate } from "./validations";
 import style from "./EditarProf.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -73,7 +69,6 @@ export default function EditarProfesor() {
   //* -------------------> Trae las materias dependiendo del año elegido <-------------------
 
   async function traerMaterias(renglon, anio) {
-
     const response = await axios.get(`/Materias/filtermateria?anio=${anio}`);
 
     if (!response.data.message) {
@@ -104,11 +99,7 @@ export default function EditarProfesor() {
 
     //* -------------------> Si se cambia un año, en materia se reestablece "materia" por default <-------------------
 
-    if (
-      ev.target.name === "anio1" ||
-      ev.target.name === "anio2" ||
-      ev.target.name === "anio3"
-    ) {
+    if (ev.target.name === "anio1" || ev.target.name === "anio2" || ev.target.name === "anio3") {
       switch (ev.target.name) {
         case "anio1":
           setUsuario({
@@ -202,12 +193,7 @@ export default function EditarProfesor() {
   const submitHandler = (ev) => {
     ev.preventDefault();
     console.log("submit");
-    dispatch(
-      editProfesor2(
-        valoresOriginales.username,
-        paraEditar(valoresOriginales, usuario)
-      )
-    );
+    dispatch(editProfesor2(valoresOriginales.username, paraEditar(valoresOriginales, usuario)));
     /* if (response) {
       window.alert(response);
     }
@@ -216,9 +202,7 @@ export default function EditarProfesor() {
 
   //Bloquea el boton submit cuando no se introdujeron cambios, o cuando hay errores
   function hasErrors() {
-    return (
-      Object.values(error).some((error) => error !== "") || hasChanged === false
-    );
+    return Object.values(error).some((error) => error !== "") || hasChanged === false;
   }
 
   useEffect(() => {
@@ -243,13 +227,9 @@ export default function EditarProfesor() {
         anio1: profesor.Materias[0].anio,
         materia1: profesor.Materias[0].namemateria,
         anio2: profesor.Materias[1] ? profesor.Materias[1].anio : "año",
-        materia2: profesor.Materias[1]
-          ? profesor.Materias[1].namemateria
-          : "materia",
+        materia2: profesor.Materias[1] ? profesor.Materias[1].namemateria : "materia",
         anio3: profesor.Materias[2] ? profesor.Materias[2].anio : "año",
-        materia3: profesor.Materias[2]
-          ? profesor.Materias[2].namemateria
-          : "materia",
+        materia3: profesor.Materias[2] ? profesor.Materias[2].namemateria : "materia",
         rol: profesor.rol,
         email: profesor.email,
         username: profesor.username,
@@ -265,13 +245,9 @@ export default function EditarProfesor() {
         anio1: profesor.Materias[0].anio,
         materia1: profesor.Materias[0].namemateria,
         anio2: profesor.Materias[1] ? profesor.Materias[1].anio : "año",
-        materia2: profesor.Materias[1]
-          ? profesor.Materias[1].namemateria
-          : "materia",
+        materia2: profesor.Materias[1] ? profesor.Materias[1].namemateria : "materia",
         anio3: profesor.Materias[2] ? profesor.Materias[2].anio : "año",
-        materia3: profesor.Materias[2]
-          ? profesor.Materias[2].namemateria
-          : "materia",
+        materia3: profesor.Materias[2] ? profesor.Materias[2].namemateria : "materia",
         rol: profesor.rol,
         email: profesor.email,
         username: profesor.username,
@@ -310,10 +286,7 @@ export default function EditarProfesor() {
       <div className={style.fullcontainer}>
         <div className={style.container}>
           <h1 className="formTitle">EDITAR PROFESOR</h1>
-          <form
-            className={style.formulario}
-            onSubmit={(ev) => submitHandler(ev)}
-          >
+          <form className={style.formulario} onSubmit={(ev) => submitHandler(ev)}>
             <section>
               <h4 className={style.campo}>Nombre</h4>
               <input
@@ -330,10 +303,7 @@ export default function EditarProfesor() {
                 type="button"
                 onClick={() => handleDisabled("name")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
               <p className="errorText">{error.name}</p>
             </section>
@@ -354,10 +324,7 @@ export default function EditarProfesor() {
                 type="button"
                 onClick={() => handleDisabled("apellido")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
               <p className="errorText">{error.apellido}</p>
             </section>
@@ -398,10 +365,8 @@ export default function EditarProfesor() {
                       value={i}
                       key={i}
                       disabled={
-                        (usuario.anio2 === usuario.anio1 &&
-                          usuario.materia2 === i) ||
-                        (usuario.anio3 === usuario.anio1 &&
-                          usuario.materia3 === i)
+                        (usuario.anio2 === usuario.anio1 && usuario.materia2 === i) ||
+                        (usuario.anio3 === usuario.anio1 && usuario.materia3 === i)
                       }
                     >
                       {i}
@@ -416,10 +381,7 @@ export default function EditarProfesor() {
                 type="button"
                 onClick={() => handleDisabled("materia1")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
               <button
                 type="button"
@@ -470,10 +432,8 @@ export default function EditarProfesor() {
                       value={i}
                       key={i}
                       disabled={
-                        (usuario.anio1 === usuario.anio2 &&
-                          usuario.materia1 === i) ||
-                        (usuario.anio3 === usuario.anio2 &&
-                          usuario.materia3 === i)
+                        (usuario.anio1 === usuario.anio2 && usuario.materia1 === i) ||
+                        (usuario.anio3 === usuario.anio2 && usuario.materia3 === i)
                       }
                     >
                       {i}
@@ -489,10 +449,7 @@ export default function EditarProfesor() {
                 disabled={usuario.materia1 === "materia"}
                 onClick={() => handleDisabled("materia2")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
               <button
                 type="button"
@@ -543,10 +500,8 @@ export default function EditarProfesor() {
                       value={i}
                       key={i}
                       disabled={
-                        (usuario.anio1 === usuario.anio3 &&
-                          usuario.materia1 === i) ||
-                        (usuario.anio2 === usuario.anio3 &&
-                          usuario.materia2 === i)
+                        (usuario.anio1 === usuario.anio3 && usuario.materia1 === i) ||
+                        (usuario.anio2 === usuario.anio3 && usuario.materia2 === i)
                       }
                     >
                       {i}
@@ -559,16 +514,10 @@ export default function EditarProfesor() {
               <button
                 type="button"
                 className={style.editButton}
-                disabled={
-                  usuario.materia1 === "materia" ||
-                  usuario.materia2 === "materia"
-                }
+                disabled={usuario.materia1 === "materia" || usuario.materia2 === "materia"}
                 onClick={() => handleDisabled("materia3")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
               <button
                 type="button"
@@ -599,10 +548,7 @@ export default function EditarProfesor() {
                 type="button"
                 onClick={() => handleDisabled("datebirth")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
             </section>
 
@@ -616,8 +562,7 @@ export default function EditarProfesor() {
                 onChange={(ev) => inputHandler(ev)}
                 value={
                   usuario.nacionalidad &&
-                  usuario.nacionalidad[0].toUpperCase() +
-                    usuario.nacionalidad.slice(1)
+                  usuario.nacionalidad[0].toUpperCase() + usuario.nacionalidad.slice(1)
                 }
               >
                 {paises?.map((el, i) => {
@@ -633,10 +578,7 @@ export default function EditarProfesor() {
                 className={style.editButton}
                 onClick={() => handleDisabled("nacionalidad")}
               >
-                <FontAwesomeIcon
-                  className={style.editIcon}
-                  icon={faPenToSquare}
-                />
+                <FontAwesomeIcon className={style.editIcon} icon={faPenToSquare} />
               </button>
             </section>
 

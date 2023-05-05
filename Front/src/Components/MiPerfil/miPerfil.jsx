@@ -10,7 +10,7 @@ import validate from "./validate";
 import { cleanResponse, editAlumno, editProfesor } from "../../Redux/actions";
 import Swal from "sweetalert2";
 import FireStorage from "../almacenamiento/Firestoragev2";
-import { SpinnerCircular } from "spinners-react";
+//import { SpinnerCircular } from "spinners-react";
 
 export function MiPerfil() {
   const dispatch = useDispatch();

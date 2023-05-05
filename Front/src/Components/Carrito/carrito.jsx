@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import styles from "./Carrito.module.css";
 import axios from "axios";
-import ProductDisplayer from "../MercadoPago/mercadopago2/productDisplayer";
+//import ProductDisplayer from "../MercadoPago/mercadopago2/productDisplayer";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";

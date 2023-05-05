@@ -1,4 +1,4 @@
-const { Materias } = require("../../db");
+/* const { Materias } = require("../../db");
 
 const getMateria = async (id) => {
   try {
@@ -17,3 +17,4 @@ const getMateria = async (id) => {
 };
 
 module.exports = { getMateria };
+ */

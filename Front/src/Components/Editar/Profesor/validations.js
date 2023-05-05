@@ -1,6 +1,6 @@
 //Regex
 const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-const emailRegex = /\S+@\S+\.\S+/;
+//const emailRegex = /\S+@\S+\.\S+/;
 const numbers = /\d/;
 
 const validate = (inputs) => {
