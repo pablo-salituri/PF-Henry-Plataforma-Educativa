@@ -36,3 +36,29 @@
       <li>Rol estudiante: Acceso y edición de datos personales. Acceso a material de estudio de sus asignaturas. Pasarela de pagos para abono de cuotas mensuales.</li>
     </ul>
   </p>
+  </br>
+  
+  ---
+  
+  ## **👩‍💻 COLABORADORES 👨‍💻**
+  <a href="https://www.linkedin.com/in/pablosalituri/" target="_blank">
+  <img align="left" src="https://user-images.githubusercontent.com/76783198/182481396-19c89e94-f3ba-4e33-9df4-f5b7a094cf8f.svg" height="3%" width="3%" />
+  </a>
+  <p><b>Pablo Salituri</b><p>
+
+  
+  <a href="https://www.linkedin.com/in/jeremias-de-miguel-55b65125b/" target="_blank">
+  <img align="left" src="https://user-images.githubusercontent.com/76783198/182481396-19c89e94-f3ba-4e33-9df4-f5b7a094cf8f.svg" height="3%" width="3%" />
+  </a>
+  <p><b>Jeremías De Miguel</b><p>
+  
+  <a href="https://www.linkedin.com/in/juan-jos%C3%A9-fiorovic-926353b7/" target="_blank">
+  <img align="left" src="https://user-images.githubusercontent.com/76783198/182481396-19c89e94-f3ba-4e33-9df4-f5b7a094cf8f.svg" height="3%" width="3%" />
+  </a>
+  <p><b>Juan Fiorovic</b><p>
+  
+  <a href="https://www.linkedin.com/in/ingrid-victoria-lazarte-8697081b2/" target="_blank">
+  <img align="left" src="https://user-images.githubusercontent.com/76783198/182481396-19c89e94-f3ba-4e33-9df4-f5b7a094cf8f.svg" height="3%" width="3%" />
+  </a>
+  <p><b>Ingrid Lazarte</b><p>
+  
