@@ -13,7 +13,7 @@
   
   ## **💡 TEMATICA**
   <p>
-    Plataforma Estudiantil.
+    Plataforma Educativa.
   </p>
   </br>
   
