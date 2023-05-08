@@ -62,3 +62,9 @@
   </a>
   <p><b>Ingrid Lazarte</b><p>
   
+  
+  <a href="https://www.linkedin.com/in/roberto-perez-961059255/" target="_blank">
+  <img align="left" src="https://user-images.githubusercontent.com/76783198/182481396-19c89e94-f3ba-4e33-9df4-f5b7a094cf8f.svg" height="3%" width="3%" />
+  </a>
+  <p><b>Roberto Pérez</b><p>
+  
