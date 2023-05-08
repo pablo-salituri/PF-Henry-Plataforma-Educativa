@@ -5,7 +5,7 @@
   
    ## **🎯 OBJETIVO**
    <p>
-    Desarrollo integral de una aplicación web, como parte del Proyecto Final de carrera en HENRY; aplicando los conceptos aprendidos en el bootcamp, implementando de manera grupal mejores prácticas y workflow de GIT.
+    Desarrollo integral de una aplicación web, como parte del Proyecto Final de carrera en HENRY; aplicando los conceptos aprendidos en el bootcamp, implementando de manera grupal mejores prácticas, SCRUM con sprints de una semana y workflow de GIT.
   </p>  
   </br>
   
