@@ -1,4 +1,6 @@
-﻿# PF-Henry-Plataforma-Educativa
+<img src="https://neurona-ba.com/wp-content/uploads/2021/07/HenryLogo.jpg" alt="Henry Logo" height="20%" width="20%">
+
+# PF-Henry-Plataforma-Educativa
 
   
    ## **🎯 OBJETIVO**
